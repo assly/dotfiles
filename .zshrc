@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
-# ZSH_THEME="cloud"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="cloud"
 
 plugins=(git)
 
@@ -86,29 +86,3 @@ bindkey -s "\C-r" "hstr --\n"
 # VPN client path
 export PATH=/usr/local/vpnclient:$PATH
 
-# Flutter PATH
-export PATH=$PATH:/usr/local/flutter/bin
-
-# added by travis gem
-[ -f /Users/arsley/.travis/travis.sh ] && source /Users/arsley/.travis/travis.sh
-
-# configuration for R Markdown
-export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
-function rmd2pdf() { R -q -e "rmarkdown::render('$1', output_format = 'pdf_document')" }
-
-# github/hub
-alias git=hub
-
-# asdf configuration
-. /usr/local/opt/asdf/asdf.sh
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/arsley/.google-cloud-sdk/path.zsh.inc' ]; then . '/Users/arsley/.google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/arsley/.google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/arsley/.google-cloud-sdk/completion.zsh.inc'; fi
-
-# temporary configurations on zeals
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"

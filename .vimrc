@@ -13,15 +13,15 @@ filetype on
 
 "dein Scripts-----------------------------
 if &compatible
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
 
 " Required:
-set runtimepath+=/Users/arsley/.vim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=/home/arsley/.vim/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/arsley/.vim/dein')
-  call dein#begin('/Users/arsley/.vim/dein')
+if dein#load_state('/home/arsley/.vim/dein')
+  call dein#begin('/home/arsley/.vim/dein')
 
   " Plugins here...
   call dein#add('scrooloose/nerdtree')
