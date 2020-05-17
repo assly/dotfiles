@@ -86,3 +86,5 @@ bindkey -s "\C-r" "hstr --\n"
 # VPN client path
 export PATH=/usr/local/vpnclient:$PATH
 
+# asdf configuration
+. $HOME/.asdf/asdf.sh
